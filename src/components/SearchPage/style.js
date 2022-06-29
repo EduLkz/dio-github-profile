@@ -9,32 +9,29 @@ export const Container = styled.div`
     padding-top: 20%;
 `;
 
-export const Input = styled.input`
+export const SearchContainer = styled.div`
     border: 1px #a3a3a3 solid;
+    border-radius: 5px;
+    background: white;
+    display: flex;
+    justify-content: center;
+
+    img{
+        margin: 2px 8px 0 0;
+    }
+`;
+
+export const Input = styled.input`
+    outline: none;
+    border: none;
     border-radius: 5px;
     height: 25px;
     width: 50vh;
     padding-right: 20px;
+    margin-left: 3px;
 `;
 
 export const Button = styled.button`
-    background-color: #1e67e6;
-    color: white;
-    font-weight: bold;
+    background-color: transparent;
     border: none;
-    border-radius: 5px;
-    padding: 2px 10px 3px 10px;
-    margin-right: 20px;
-    margin-left: 20px;
-    width: 100px;
-    height: 29px;
-
-    &:hover{
-        background-color: #1a56a6;
-    }
-
-    &:active{
-        padding: 5px 10px 0px 10px;
-        background-color: #183486;
-    }
 `;

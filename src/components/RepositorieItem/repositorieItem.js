@@ -1,5 +1,6 @@
 import React from 'react';
- import { Container, Button, DateTime, Separation} from './style';
+import { Container, Button, DateTime, Separation} from './style';
+import linkIco from '../../assets/icons/external-link.svg';
 
 const RepositorieItem = ({name, link, created_at, updated_at}) => {
 
@@ -22,7 +23,7 @@ const RepositorieItem = ({name, link, created_at, updated_at}) => {
             <Separation />
             <p>Created at: <DateTime> {ConvertDate(created_at)} </DateTime></p>
             <p>Last Update: <DateTime> {ConvertDate(updated_at)} </DateTime></p>
-            <Button onClick={() => window.open(link)}>Visit repository</Button>
+            <Button onClick={() => window.open(link)}>Visit repository &nbsp;<img src={linkIco} style={{width: '15px'}}/></Button>
         </Container>
     );
 }

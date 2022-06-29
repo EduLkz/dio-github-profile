@@ -1,6 +1,7 @@
 import React from 'react';
 import useGithub from '../../hooks/gitHooks';
 import { Container, Image, UserInfo, UserStatus } from './style';
+import blogIco from '../../assets/icons/chevrons-right.svg';
 
 function Profile() {
 
@@ -26,7 +27,7 @@ const {githubState} = useGithub();
             {
                 (githubState.user.blog) ? (
                     <>
-                        <p>&gt;<a href={githubState.user.blog} target='_blank' rel="noreferrer">Blog</a><br/></p>
+                        <p><img src={blogIco} style={{height: '12px'}}/><a href={githubState.user.blog} target='_blank' rel="noreferrer">Blog</a><br/></p>
                     </>
                 ):(<></>)
             }

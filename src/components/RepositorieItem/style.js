@@ -10,15 +10,11 @@ export const Container = styled.div`
     border: 1px #777 solid;
     border-radius: 15px;
     background-color: #e5e5ff;
-    
-    
-    
     h4{
         padding: 0;
         margin: 0;
         margin-bottom: 10px;
     }
-
     p{
         margin: 0;
     }
@@ -44,11 +40,9 @@ export const Button = styled.button`
     border-radius: 5px;
     font-weight: 200;
     cursor: pointer;
-
     :hover{
         background-color: #5d9639;
     }
-
     :active{
         background-color: #b4d1a1;
         padding: 15px 0 5px 0;
